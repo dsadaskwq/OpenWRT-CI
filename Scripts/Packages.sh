@@ -96,6 +96,7 @@ UPDATE_PACKAGE "adguardhome" "chenmozhijin/luci-app-adguardhome" "master"
 UPDATE_PACKAGE "tinyfilemanager" "muink/luci-app-tinyfilemanager" "master"
 UPDATE_PACKAGE "luci-theme-kucat" "sirpdboy/luci-theme-kucat" "$([[ $WRT_URL == *"lede"* ]] && echo "main" || echo "js")"
 UPDATE_PACKAGE "luci-app-advancedplus" "sirpdboy/luci-app-advancedplus" "main"
+UPDATE_PACKAGE "luci-app-netspeedtest" "sirpdboy/netspeedtest" "master"
 
 
 if [[ $WRT_URL != *"lede"* ]]; then
