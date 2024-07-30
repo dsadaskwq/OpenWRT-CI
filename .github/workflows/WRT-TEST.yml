@@ -25,6 +25,11 @@ on:
         required: true
         type: choice
         options: [argon, design]
+      DOCKER:
+        description: '添加 docker容器'
+        required: true
+        default: false
+        type: boolean
       TEST:
         description: '仅输出配置文件，不编译固件。'
         default: 'false'
@@ -61,5 +66,7 @@ jobs:
       WRT_BRANCH: ${{inputs.BRANCH}}
       #插件调整
       WRT_PACKAGE: ${{inputs.PACKAGE}}
+      #docker容器
+      USE_DOCKER: ${{inputs.DOCKER}}
       #仅输出配置文件
       WRT_TEST: ${{inputs.TEST || 'false'}}
